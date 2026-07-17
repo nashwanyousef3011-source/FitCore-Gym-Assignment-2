@@ -1,0 +1,791 @@
+/* ======================================================== */
+/* ========== SHARED STYLES (GLOBAL RESET) ========== */
+/* ======================================================== */
+
+/* ---- Universal reset: remove default margins/paddings & use border-box ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---- Body: set font family ---- */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* ---- Inline-block for span and anchor tags ---- */
+span,
+a {
+    display: inline-block;
+}
+
+/* ---- Images: full width by default ---- */
+img {
+    width: 100%;
+}
+
+/* ---- Clearfix: clears floated elements ---- */
+.clr {
+    clear: both;
+}
+
+/* ======================================================== */
+/* ========== HERO / HEADER SECTION ========== */
+/* ======================================================== */
+
+/* ---- Hero section container ---- */
+div.hero {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* ---- Hero inner container ---- */
+div.hero div.container {
+    width: 100%;
+    margin-block: 100px;
+}
+
+/* ---- Hero content (left side): 60% width ---- */
+.hero .container .hero_content {
+    width: 60%;
+    float: left;
+}
+
+/* ---- Hero heading style ---- */
+.hero .container .hero_content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+/* ---- Hero paragraph ---- */
+.hero .container .hero_content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    line-height: 32.5px;
+}
+
+/* ---- Primary button (black background) ---- */
+.hero .container .hero_content .btn1 {
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+    font-size: medium;
+    padding: 16px 32px;
+    border-radius: 3px;
+    margin-left: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ---- Secondary button (outline style) ---- */
+.hero .container .hero_content .btn2 {
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    font-size: medium;
+    padding: 16px 32px;
+    border-radius: 3px;
+    margin-left: 16px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+/* ---- Hero image (right side): 40% width ---- */
+.hero .container .hero_image {
+    width: 40%;
+    float: left;
+}
+
+/* ---- Hero image styling ---- */
+.hero .container .hero_image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* ======================================================== */
+/* ========== WHY CHOOSE US SECTION ========== */
+/* ======================================================== */
+
+/* ---- Section container ---- */
+.why-choose-us {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ---- Inner container ---- */
+.why-choose-us .container {
+    margin-block: 50px;
+}
+
+/* ---- Section title styling ---- */
+.why-choose-us .container .title {
+    text-align: center;
+}
+
+/* ---- Title heading ---- */
+.why-choose-us .container .title h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    margin-block: 24px;
+}
+
+/* ---- Title paragraph ---- */
+.why-choose-us .container .title p {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 24px 75px;
+}
+
+/* ---- Benefit cards container ---- */
+.why-choose-us .container .benefit-cards {
+    width: 100%;
+}
+
+/* ---- Each feature card: 33.33% width, floated left ---- */
+.why-choose-us .container .benefit-cards .card {
+    width: 33.33%;
+    padding: 20px;
+    float: left;
+    text-align: center;
+}
+
+/* ---- Inner card styling ---- */
+.why-choose-us .container .benefit-cards .card .inner {
+    width: 100%;
+    padding: 32px;
+    border-radius: 10px;
+}
+
+/* ---- Individual card background colors ---- */
+.why-choose-us .container .benefit-cards .card .card1 {
+    background-color: #dbeafe; /* Blue tint */
+}
+.why-choose-us .container .benefit-cards .card .card2 {
+    background-color: #d0fae5; /* Green tint */
+}
+.why-choose-us .container .benefit-cards .card .card3 {
+    background-color: #f3e8ff; /* Purple tint */
+}
+
+/* ---- Icon square container ---- */
+.why-choose-us .container .benefit-cards .card .square {
+    width: 63px;
+    height: 63px;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* ---- Icon background colors ---- */
+.why-choose-us .container .benefit-cards .card .square1 {
+    background-color: #155dfc; /* Blue */
+}
+.why-choose-us .container .benefit-cards .card .square2 {
+    background-color: #009966; /* Green */
+}
+.why-choose-us .container .benefit-cards .card .square3 {
+    background-color: #9810fa; /* Purple */
+}
+
+/* ---- Inner icon (white shape inside square) ---- */
+.why-choose-us .container .benefit-cards .card .square .child_square {
+    width: 31px;
+    height: 31px;
+    background-color: #fff;
+    margin: 15px auto;
+}
+
+/* ---- First icon: square shape ---- */
+.why-choose-us .container .benefit-cards .card .square .child_square1 {
+    border-radius: 2px;
+}
+
+/* ---- Second icon: circular shape ---- */
+.why-choose-us .container .benefit-cards .card .square .child_square2 {
+    border-radius: 50%;
+}
+
+/* ---- Third icon: square shape ---- */
+.why-choose-us .container .benefit-cards .card .square .child_square3 {
+    border-radius: 2px;
+}
+
+/* ---- Card heading margin ---- */
+.why-choose-us .container .benefit-cards .card h3 {
+    margin-bottom: 16px;
+}
+
+/* ======================================================== */
+/* ===== "MORE THAN JUST A GYM" SUB-SECTION ===== */
+/* ======================================================== */
+
+/* ---- More benefits container ---- */
+.why-choose-us .container .more-benefits {
+    width: 100%;
+    margin: 20px 20px;
+}
+
+/* ---- Image column: 50% width, floated left ---- */
+.why-choose-us .container .more-benefits .image {
+    width: 50%;
+    float: left;
+}
+
+/* ---- Image styling ---- */
+.why-choose-us .container .more-benefits .image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ---- Content column: 50% width, floated left ---- */
+.why-choose-us .container .more-benefits .content {
+    width: 50%;
+    padding: 30px;
+    float: left;
+}
+
+/* ---- Content heading ---- */
+.why-choose-us .container .more-benefits .content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ---- Features container ---- */
+.why-choose-us .container .more-benefits .content .features {
+    width: 100%;
+}
+
+/* ---- Each feature item ---- */
+.why-choose-us .container .more-benefits .content .features .feature-item {
+    width: 100%;
+    padding-inline: 10px;
+    margin-bottom: 35px;
+    border-left: 5px solid #000;
+    padding-left: 20px;
+}
+
+/* ---- Feature title ---- */
+.why-choose-us .container .more-benefits .content .features .feature-item .feature-title {
+    margin-block: 20px;
+    font-size: 20px;
+}
+
+/* ---- Feature text ---- */
+.why-choose-us .container .more-benefits .content .features .feature-item .feature-text {
+    margin-block: 20px;
+    color: #4b5563;
+}
+
+/* ======================================================== */
+/* ========== MEMBER REVIEWS (TESTIMONIALS) SECTION ========== */
+/* ======================================================== */
+
+/* ---- Testimonials section background ---- */
+.testimonials {
+    width: 100%;
+    background-color: #F9FAFB;
+}
+
+/* ---- Testimonials container ---- */
+.testimonials .container {
+    padding: 80px 10px;
+    margin-block: 25px;
+}
+
+/* ---- Section title styling ---- */
+.testimonials .container .title {
+    text-align: center;
+}
+
+/* ---- Title heading ---- */
+.testimonials .container .title h2 {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+/* ---- Title paragraph ---- */
+.testimonials .container .title p {
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+/* ---- Reviews container ---- */
+.testimonials .container .reviews {
+    width: 100%;
+    margin-block: 64px;
+}
+
+/* ---- Each review card: 31.33% width, floated left ---- */
+.testimonials .container .reviews .card {
+    width: 31.33%;
+    margin: 10px;
+    float: left;
+    border-radius: 10px;
+}
+
+/* ---- Inner card styling ---- */
+.testimonials .container .reviews .card .inner {
+    width: 100%;
+    padding: 32px;
+    border-radius: 15px;
+}
+
+/* ---- Individual card background colors ---- */
+.testimonials .container .reviews .card .card-avatar-1 {
+    background-color: #EDF2F9;
+    border: #EDF2F9 solid 2px;
+}
+.testimonials .container .reviews .card .card-avatar-2 {
+    background-color: #ECFDF5;
+    border: #ECFDF5 solid 2px;
+}
+.testimonials .container .reviews .card .card-avatar-3 {
+    background-color: #FAF5FF;
+    border: #FAF5FF solid 2px;
+}
+
+/* ---- Card header: contains avatar and author info ---- */
+.testimonials .container .reviews .card .card-header {
+    width: 100%;
+    padding-inline: 21px;
+}
+
+/* ---- Author image: 25% width, floated left ---- */
+.testimonials .container .reviews .card .card-header .author-image {
+    width: 25%;
+    float: left;
+}
+
+/* ---- Avatar image: circular ---- */
+.testimonials .container .reviews .card .card-header .author-image img {
+    border-radius: 50%;
+}
+
+/* ---- Author info: 75% width, floated left ---- */
+.testimonials .container .reviews .card .card-header .author-info {
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+
+/* ---- Card body (review text) ---- */
+.testimonials .container .reviews .card .card-body {
+    width: 100%;
+    line-height: 24px;
+    padding: 21px;
+}
+
+/* ======================================================== */
+/* ========== STATISTICS SECTION ========== */
+/* ======================================================== */
+
+/* ---- Statistics container ---- */
+.testimonials .container .statistics {
+    margin: 20px 10px;
+    padding: 48px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    border: #e2e8f0 solid 1px;
+}
+
+/* ---- Each stat: 25% width, floated left ---- */
+.testimonials .container .statistics .stat {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+/* ---- Stat number (bold) ---- */
+.testimonials .container .statistics .stat .StatBold {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+/* ---- Stat label ---- */
+.testimonials .container .statistics .stat p {
+    color: oklch(44.6% .03 256.802);
+    padding: 10px;
+}
+
+/* ======================================================== */
+/* ========== MEMBERSHIP FORM SECTION ========== */
+/* ======================================================== */
+
+/* ---- Form section container ---- */
+.membership-form {
+    width: 100%;
+}
+
+/* ---- Form inner container ---- */
+.membership-form .container {
+    width: 80%;
+    margin-inline: auto;
+    padding: 80px 0px;
+    background-color: #fff;
+}
+
+/* ---- Form title styling ---- */
+.membership-form .container .title {
+    text-align: center;
+}
+
+/* ---- Title heading ---- */
+.membership-form .container .title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+/* ---- Title paragraph ---- */
+.membership-form .container .title p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    color: #4a5565;
+}
+
+/* ---- Form group: first and last name row ---- */
+.membership-form .container .form-group {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* ---- First name: 48% width, floated left ---- */
+.membership-form .container .form-group .first-name {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+/* ---- Last name: 48% width, floated left ---- */
+.membership-form .container .form-group .last-name {
+    width: 48%;
+    float: left;
+}
+
+/* ---- Form labels ---- */
+.membership-form .container label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #1a202c;
+}
+
+/* ---- Form inputs, selects, textarea ---- */
+.membership-form .container input,
+.membership-form .container select,
+.membership-form .container textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* ---- Input focus state ---- */
+.membership-form .container input:focus,
+.membership-form .container select:focus,
+.membership-form .container textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+/* ---- Submit button ---- */
+.membership-form .container .submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* ---- Submit button hover state ---- */
+.membership-form .container .submit-btn:hover {
+    background-color: #333;
+}
+
+/* ---- Form footer (terms) ---- */
+.membership-form .container footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #718096;
+    font-size: 14px;
+}
+
+/* ======================================================== */
+/* ========== SITE FOOTER (LAST-FOOTER) ========== */
+/* ======================================================== */
+
+/* ---- Footer container: dark background ---- */
+.Last-Footer {
+    padding: 60px 4% 20px;
+    background-color: rgb(16, 23, 33);
+    margin-top: 50px;
+}
+
+/* ---- Footer inner container ---- */
+.Last-Footer .container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ---- Footer columns: 3 items, 30% width, floated left ---- */
+.Last-Footer .container .item {
+    padding: 10px;
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 20px;
+    color: white;
+}
+
+/* ---- Last column: remove right margin ---- */
+.Last-Footer .container .item:last-child {
+    margin-right: 0;
+}
+
+/* ---- Footer heading ---- */
+.Last-Footer .container .item h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+/* ---- Footer paragraph ---- */
+.Last-Footer .container .item p {
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+/* ---- Social/quick links container spacing ---- */
+.Last-Footer .container .item .links {
+    margin-top: 20px;
+}
+
+/* ---- Quick links (part2): list items stacked vertically ---- */
+.Last-Footer .container .item .links.part2 ul li {
+    display: block;
+    margin-top: 10px;
+}
+
+/* ---- Social links: inline display ---- */
+.Last-Footer .container .item ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* ---- Link color: gray, no underline ---- */
+.Last-Footer .container .item ul li a {
+    text-decoration: none;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+/* ---- Link hover state ---- */
+.Last-Footer .container .item ul li a:hover {
+    color: #fff;
+}
+
+/* ---- Phone link: gray, no underline ---- */
+.Last-Footer .container .link-phone a {
+    text-decoration: none;
+    color: #9ca3af;
+}
+
+/* ---- Footer sub-headings ---- */
+.Last-Footer .container .item h4 {
+    color: #d1d5db;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+/* ======================================================== */
+/* ========== FOOTER BOTTOM BAR ========== */
+/* ======================================================== */
+
+/* ---- Horizontal rule (divider) ---- */
+.Last-Footer hr {
+    border: none;
+    border-top: 1px solid #374151;
+    margin: 30px 0 20px;
+}
+
+/* ---- Bottom bar: copyright (left) & legal links (right) ---- */
+.Last-Footer .end {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* ---- Copyright text: floated left ---- */
+.Last-Footer .end p {
+    float: left;
+    color: #9ca3af;
+    margin: 0;
+}
+
+/* ---- Legal links: floated right ---- */
+.Last-Footer .end ul {
+    float: right;
+    list-style: none;
+}
+
+/* ---- Legal links: inline display with spacing ---- */
+.Last-Footer .end ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* ---- Legal links: gray, no underline ---- */
+.Last-Footer .end ul li a {
+    text-decoration: none;
+    color: #9ca3af;
+    transition: color 0.3s ease;
+}
+
+/* ---- Legal links hover state ---- */
+.Last-Footer .end ul li a:hover {
+    color: #fff;
+}
+
+/* ======================================================== */
+/* ========== RESPONSIVE DESIGN (MEDIA QUERIES) ========== */
+/* ======================================================== */
+
+/* ---- Tablet screens (max-width: 768px) ---- */
+@media (max-width: 768px) {
+    /* Hero section: stack content and image */
+    .hero .container .hero_content {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .hero .container .hero_image {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+    }
+
+    .hero .container .hero_content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /* Why Choose Us: cards stack vertically */
+    .why-choose-us .container .benefit-cards .card {
+        width: 100%;
+        float: none;
+    }
+
+    .why-choose-us .container .more-benefits .image {
+        width: 100%;
+        float: none;
+    }
+
+    .why-choose-us .container .more-benefits .content {
+        width: 100%;
+        float: none;
+        padding: 20px 0;
+    }
+
+    .why-choose-us .container .title p {
+        margin: 24px 20px;
+    }
+
+    /* Testimonials: cards stack vertically */
+    .testimonials .container .reviews .card {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    /* Statistics: 2 columns on tablet */
+    .testimonials .container .statistics .stat {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* Membership form: inputs stack */
+    .membership-form .container .form-group .first-name,
+    .membership-form .container .form-group .last-name {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    /* Footer: columns stack */
+    .Last-Footer .container .item {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .Last-Footer .end p {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Last-Footer .end ul {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* ---- Mobile screens (max-width: 480px) ---- */
+@media (max-width: 480px) {
+    .hero .container .hero_content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero .container .hero_content .btn1,
+    .hero .container .hero_content .btn2 {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .why-choose-us .container .title h2 {
+        font-size: 28px;
+    }
+
+    .testimonials .container .title h2 {
+        font-size: 28px;
+    }
+
+    .testimonials .container .statistics .stat {
+        width: 100%;
+        float: none;
+    }
+
+    .membership-form .container .title h2 {
+        font-size: 28px;
+    }
+
+    .membership-form .container {
+        width: 95%;
+        padding: 40px 10px;
+    }
+}
